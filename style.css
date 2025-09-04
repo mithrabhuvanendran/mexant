@@ -231,6 +231,7 @@ header {
 }
 
 .more-details .two {
+  width: 60%;
   display: flex;
   justify-content: center;
   padding: 0 50px;
