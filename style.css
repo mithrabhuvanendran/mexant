@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: max-width;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.background {
+  width: 100%;
+  height: 500px;
+  background-image: url(images/work.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.title {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 20px 0;
+  color: white;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 2px blue;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav select {
+  width: 70%;
+  border: none;
+  background-color: rgba(218, 186, 149, 0.1);
+  color: white;
+}
+
+.title div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title div input[type="button"] {
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.title h2 {
+  display: flex;
+  padding: 10px 150px;
+  font-size: 2.5rem;
+  background: linear-gradient(to bottom, red, orange);
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 1px red;
+  /* width: fit-content; */
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 90px;
+}
+
+.home p:first-child {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+}
+
+.home p:first-child span {
+  color: orange;
+  text-shadow: 0px 0px 2px red;
+}
+
+.home div {
+  width: 50px;
+  height: 3px;
+  background-color: white;
+}
+
+.home p:nth-child(3) {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.buttons input[type="button"] {
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.services {
+  padding: 75px 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.services div {
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(177, 177, 177, 0.4);
+}
+
+.services div h3 {
+  padding-bottom: 10px;
+}
+
+.solutions {
+  padding-bottom: 50px;
+}
+
+.solutions main {
+  width: 100%;
+  height: 300px;
+  background-image: url(images/books.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.solutions main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.solutions main div {
+  padding: 0 150px;
+}
+
+.solutions main div p {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 0px 0px 3px blue;
+}
+
+.buttons-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-left: 200px;
+}
+
+.buttons-1 input[type="button"] {
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+header {
+  text-align: center;
+}
+
+header h6 {
+  color: red;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  place-items: center;
+  padding: 10px;
+  margin-bottom: 70px;
+}
+
+.more-details div {
+  width: 100%;
+}
+
+.more-details .one {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 100px;
+  gap: 30px;
+}
+
+.one p {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px gray;
+  padding: 10px 30px;
+}
+
+.more-details .two {
+  display: flex;
+  justify-content: center;
+  padding: 0 50px;
+  font-size: 1.5em;
+}
+
+.more-details .home-table {
+  padding-left: 100px;
+}
+
+.more-details .home-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0 200px;
+}
+
+.more-details .home-details input[type="button"] {
+  width: 40%;
+  padding: 5px;
+  background-color: green;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+.more-details table {
+  width: 100%;
+}
+
+.more-details table,
+.more-details tr {
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+td,
+th {
+  padding: 10px;
+}
+
+th {
+  text-align: left;
+}
+
+.financial-plan {
+  display: grid;
+  justify-content: center;
+  background-image: url(images/laptop-coffee.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.financial-plan div {
+  padding: 30px 20px;
+}
+
+.financial-plan div h5 {
+  color: red;
+  padding: 5px 0;
+}
+
+.financial-plan div h2 {
+  color: white;
+}
+
+.financial-plan form table {
+  border-spacing: 10px;
+}
+
+.financial-plan form table td {
+  text-align: left;
+  color: white;
+}
+
+.financial-plan form table td input,
+select {
+  padding: 5px;
+  box-shadow: 0 0 5px rgba(255, 165, 0, 0.8);
+}
+
+.financial-plan form table td input[type="submit"] {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.about-testimonial {
+  text-align: center;
+  padding: 40px;
+}
+
+.about-testimonial h5 {
+  color: red;
+}
+
+.message {
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.message figure {
+  width: 50%;
+  display: flex;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(142, 142, 142, 0.3);
+  overflow: hidden;
+}
+
+.message figure figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.message figure .img-container {
+  width: 100%;
+  object-fit: cover;
+  border: none;
+  border-radius: 5px;
+}
+
+.message figure .img-container img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: all 2s ease;
+}
+
+footer {
+  width: 100%;
+}
+
+footer .company {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0;
+  background-color: rgba(11, 11, 135, 0.8);
+}
+
+.company h4 {
+  color: white;
+}
+
+footer .copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  background-color: rgb(11, 11, 135);
+  color: white;
+}
+
+.copyright p span {
+  color: red;
+}
